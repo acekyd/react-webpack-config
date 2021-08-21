@@ -3,7 +3,7 @@ const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 
 module.exports = () => ({
-    devtool: "nosource-source-map",
+    devtool: "nosources-source-map",
     output: {
         filename: "production.js"
     },

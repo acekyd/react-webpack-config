@@ -1,7 +1,5 @@
-
 import React, { Component } from "react";
 import Loadable from "react-loadable";
-
 const LoadApp = Loadable({
     loader: () => import("./App"),
     loading() {
@@ -9,7 +7,6 @@ const LoadApp = Loadable({
     },
     timeout: 10000 // 10 seconds
 });
-
 export default class LoadableApp extends Component {
     render() {
         return <LoadApp />
